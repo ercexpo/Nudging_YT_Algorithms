@@ -57,7 +57,7 @@ dat_survey <- read_csv("survey_data.csv") %>%
            party == "Democrat" ~ "Democrat",
            party == "Republican" ~ "Republican")
          ) %>%
-  mutate_at(vars(#NEWSFOL_1_W2, NEWSFOL_2_W2, NEWSFOL_3_W2, NEWSFOL_4_W2,
+  mutate_at(vars(
                  Q3_1_12_21_22, Q3_2_12_21_22, Q3_3_12_21_22,
                  Q3_4_12_28_22, Q3_5_12_28_22, Q3_6_12_28_22,
                  Q3_4_01_09_23, Q3_5_01_09_23, Q3_6_01_09_23,
